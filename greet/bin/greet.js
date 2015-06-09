@@ -1,7 +1,4 @@
-module.exports = function (name, drunk) {
-        if(drunk) {
-            return "hello " + name + ", you look sexy today";
-        } else {
-            return "hello, " + name;
-        }
-}
+#!/usr/bin/env node
+var greet = require('../index')
+var argv = require('minimist')(process.argv.slice(2));
+console.log(greet(argv._, argv.drunk))

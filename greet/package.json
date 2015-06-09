@@ -11,7 +11,7 @@
     "hello-world"
   ],
   "bin": {
-    "greet": "index.js"
+    "greet": "./bin/greet.js"
   },
   "dependencies": {
     "minimist": "^1.1.1"
